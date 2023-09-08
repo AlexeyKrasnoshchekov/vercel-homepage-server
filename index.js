@@ -17,7 +17,9 @@ const weatherRouter = require('./weather');
 const app = express();
 const port = process.env.PORT || 8000;
 
-
+app.get('/', function (req, res) {
+  res.json('This is my nice homepage');
+});
 
 // route middlewares
 app.use('/images',  imageRouter);
