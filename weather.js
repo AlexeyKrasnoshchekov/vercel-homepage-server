@@ -6,7 +6,7 @@ const cors = require("cors");
 
 const ORIGIN = process.env.ORIGIN;
 
-// console.log('ORIGIN', process.env.REACT_APP_WEATHER_KEY);
+console.log('ORIGIN1', ORIGIN);
 
 const weatherRouter = express.Router();
 

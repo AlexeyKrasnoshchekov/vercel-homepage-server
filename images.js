@@ -8,6 +8,8 @@ const cors = require("cors");
 const API_URL = `https://api.unsplash.com/photos/random/?client_id=${process.env.REACT_APP_IMAGE_KEY}&orientation=landscape&count=5`;
 const ORIGIN = process.env.ORIGIN;
 
+console.log('ORIGIN2', ORIGIN);
+
 const imageRouter = express.Router();
 
 imageRouter.use(cors());
